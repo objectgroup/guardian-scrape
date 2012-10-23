@@ -15,5 +15,7 @@ with open('output/guardian_page1.json', 'r') as f:
     output = json.load(f)
     pages = output['response']['pages']
 
+pages = 10
+
 for i in range(2, pages + 1):
     retrieve(i, key)
